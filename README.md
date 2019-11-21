@@ -29,12 +29,9 @@ This project is about creating a portfolio page for my personal website. It will
     - Including a generated QR-Code printed on the PDF containing the link back to this page, e.g. with the following API: http://goqr.me/api/
 
 
-
-
 ## Project confirmation
 
-< to be filled by lecturer>
-
+I said _short description_... :wink:. You might start.
 
 ## Project delivery <to be filled by student>
 
