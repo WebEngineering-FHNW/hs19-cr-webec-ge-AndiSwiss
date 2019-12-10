@@ -42,13 +42,13 @@
 
 <body id="page-top" class="politics_version">
 
-%{--<!-- LOADER -->--}%
-%{--<div id="preloader">--}%
-%{--    <div id="main-ld">--}%
-%{--        <div id="loader"></div>--}%
-%{--    </div>--}%
-%{--</div><!-- end loader -->--}%
-%{--<!-- END LOADER -->--}%
+<!-- LOADER -->
+<div id="preloader">
+    <div id="main-ld">
+        <div id="loader"></div>
+    </div>
+</div><!-- end loader -->
+<!-- END LOADER -->
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -72,6 +72,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#services">Focus areas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
             </ul>
         </div>
@@ -232,6 +235,82 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
+<div id="portfolio" class="section lb">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>Portfolio</h3>
+            <p>Here are some projects I was working on recently:</p>
+        </div><!-- end title -->
+
+        <div class="gallery-menu row">
+            <div class="col-md-12">
+                <div class="button-group filter-button-group text-left">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".gal_a">Web Development</button>
+                    <button data-filter=".gal_b">Category 2 (tbd)</button>
+                    <button data-filter=".gal_c">Category 3 (tbd)</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-list row">
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="${resource(dir: "images/portfolioPics", file: "gallery_img-01.jpg")}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-02.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="portfolioPics/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-03.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="portfolioPics/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-04.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="portfolioPics/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-05.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="portfolioPics/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
+                <div class="gallery-single fix">
+                    <asset:image src="portfolioPics/gallery_img-06.jpg" class="img-fluid" alt="Image"/>
+                    <div class="img-overlay">
+                        <a href="portfolioPics/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 <div class="copyrights">

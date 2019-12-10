@@ -7,6 +7,9 @@ class Project {
     String link
     Date date
 
+    // todo: introduce a category enum -> which I can then use in the Portfolio front-end as a filter in
+    //  data-filter=".gal_a"   (and .gal_b  and .gal_c)
+
 
     static constraints = {
         title(maxSize: 255)
