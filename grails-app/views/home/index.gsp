@@ -36,8 +36,7 @@
     <asset:stylesheet src="custom.css"/>
 
     <!-- Modernizr -->
-    <g:javascript src="modernizr.js"/>
-
+    <asset:javascript src="modernizr.js"/>
 
 </head>
 
@@ -251,18 +250,18 @@
 <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
 <!-- ALL JS FILES -->
-<g:javascript src="all.js"/>
+<asset:javascript src="all.js"/>
 <!-- Camera Slider -->
-<g:javascript src="jquery.mobile.customized.min.js"/>
-<g:javascript src="jquery.easing.1.3.js"/>
-<g:javascript src="parallaxie.js"/>
-<g:javascript src="headline.js"/>
+<asset:javascript src="jquery.mobile.customized.min.js"/>
+<asset:javascript src="jquery.easing.1.3.js"/>
+<asset:javascript src="parallaxie.js"/>
+<asset:javascript src="headline.js"/>
 <!-- Contact form JavaScript -->
-<g:javascript src="jqBootstrapValidation.js"/>
-<g:javascript src="contact_me.js"/>
+<asset:javascript src="jqBootstrapValidation.js"/>
+<asset:javascript src="contact_me.js"/>
 <!-- ALL PLUGINS -->
-<g:javascript src="custom.js"/>
-<g:javascript src="jquery.vide.js"/>
+<asset:javascript src="custom.js"/>
+<asset:javascript src="jquery.vide.js"/>
 
 </body>
 </html>
