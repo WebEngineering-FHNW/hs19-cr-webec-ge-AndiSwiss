@@ -22,17 +22,19 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="${resource(dir: "images", file: "favicon.ico")}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="${resource(dir: "images", file: "apple-touch-icon.png")}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <asset:stylesheet src="bootstrap.min.css"/>
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- TODO: Activate and repair style.css -> not yet working -->
+%{--    <asset:stylesheet src="style.css"/>--}%
+
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <asset:stylesheet src="responsive.css"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <asset:stylesheet src="custom.css"/>
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 <!--[if lt IE 9]>
