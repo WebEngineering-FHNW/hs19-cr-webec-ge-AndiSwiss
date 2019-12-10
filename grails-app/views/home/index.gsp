@@ -28,31 +28,28 @@
     <!-- Bootstrap CSS -->
     <asset:stylesheet src="bootstrap.min.css"/>
     <!-- Site CSS -->
-    <!-- TODO: Activate and repair style.css -> not yet working -->
-%{--    <asset:stylesheet src="style.css"/>--}%
+    <asset:stylesheet src="style.css"/>
 
     <!-- Responsive CSS -->
     <asset:stylesheet src="responsive.css"/>
     <!-- Custom CSS -->
     <asset:stylesheet src="custom.css"/>
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!-- Modernizr -->
+    <g:javascript src="modernizr.js"/>
+
 
 </head>
 
 <body id="page-top" class="politics_version">
 
-<!-- LOADER -->
-<div id="preloader">
-    <div id="main-ld">
-        <div id="loader"></div>
-    </div>
-</div><!-- end loader -->
-<!-- END LOADER -->
+%{--<!-- LOADER -->--}%
+%{--<div id="preloader">--}%
+%{--    <div id="main-ld">--}%
+%{--        <div id="loader"></div>--}%
+%{--    </div>--}%
+%{--</div><!-- end loader -->--}%
+%{--<!-- END LOADER -->--}%
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -87,7 +84,7 @@
     <div class="heading">
         <h1>hello, I'm Andreas.</h1>
 
-        <p>"I'm currently finishing my bachelor's degree in computer science,
+        <p>"I'm still studying hard for finishing my bachelor's degree in computer science,
             <br>soon ready to start working in <b>your</b> company."</p>
 
         <h3 class="cd-headline clip is-full-width">
@@ -254,18 +251,18 @@
 <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
 <!-- ALL JS FILES -->
-<script src="js/all.js"></script>
+<g:javascript src="all.js"/>
 <!-- Camera Slider -->
-<script src="js/jquery.mobile.customized.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/parallaxie.js"></script>
-<script src="js/headline.js"></script>
+<g:javascript src="jquery.mobile.customized.min.js"/>
+<g:javascript src="jquery.easing.1.3.js"/>
+<g:javascript src="parallaxie.js"/>
+<g:javascript src="headline.js"/>
 <!-- Contact form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
+<g:javascript src="jqBootstrapValidation.js"/>
+<g:javascript src="contact_me.js"/>
 <!-- ALL PLUGINS -->
-<script src="js/custom.js"></script>
-<script src="js/jquery.vide.js"></script>
+<g:javascript src="custom.js"/>
+<g:javascript src="jquery.vide.js"/>
 
 </body>
 </html>
