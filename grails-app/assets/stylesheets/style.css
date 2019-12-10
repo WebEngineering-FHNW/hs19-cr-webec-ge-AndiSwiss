@@ -1385,16 +1385,6 @@ hr.invis1 {
     bottom: -15px;
 }
 
-.code-wrapper {
-    border: 1px solid #ffffff;
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: url("uploads/code.jpg") no-repeat;
-}
-
 .design-wrapper {
     overflow: hidden;
     position: absolute;
@@ -1404,16 +1394,6 @@ hr.invis1 {
     bottom: 0;
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
-}
-
-.design-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background: url("uploads/design.jpg") no-repeat;
 }
 
 .filter-button-group{
@@ -2053,32 +2033,6 @@ select.mobile-device {
     FOOTER
 -------------------------------------------------------------------*/
 
-.cac {
-    background-color: #232323;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.cac:hover a h3 {
-    color: #fff !important;
-}
-
-.cac a h3 {
-    color: #999;
-}
-
-.cac h3 {
-    padding: 60px 0;
-    margin: 0;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: capitalize;
-    line-height: !important;
-}
-
 .footer {
     padding: 90px 0 80px !important;
     color: #999;
@@ -2316,23 +2270,6 @@ select.mobile-device {
     border: 0 !important;
 }
 
-.stat-wrap h3 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #999 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1 !important:
-}
-
-.stat-wrap p {
-    font-size: 38px;
-    color: #ffffff;
-    margin: 0;
-    font-weight: 300;
-    padding: 4px 0 0;
-    line-height: 1 !important;
-}
 
 #preloader {
     width: 100%;
