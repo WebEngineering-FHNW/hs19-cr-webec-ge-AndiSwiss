@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <meta name="layout" content="main"/>
+    <meta name="layout" content="public"/>
     <title>Home Page</title>
 </head>
 
@@ -16,7 +16,7 @@
 
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <h1>Welcome to my project portfolio page!</h1>
+        <h1>My Projects</h1>
     </section>
 </div>
 </body>

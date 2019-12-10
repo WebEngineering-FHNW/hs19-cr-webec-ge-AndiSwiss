@@ -1,7 +1,5 @@
 package exercise
 
-import grails.util.Environment
-
 import java.text.SimpleDateFormat
 
 class BootStrap {
@@ -12,12 +10,12 @@ class BootStrap {
         Date aDate = new SimpleDateFormat(pattern).parse("2017-03-26").clearTime()
 
         new Project(title: "Project 123", description: "Nice project", link: "https://andiswiss.ch/project1", date: today - 365).save()
-        new Project(title: "Project 6", description: "Nice project", link: "https://andiswiss.ch/project6", date: today - 20).save()
+        new Project(title: "Project 6", description: "hmm", link: "https://andiswiss.ch/project6", date: today - 20).save()
 
-        // or different way of
+        // or different way of defining a project:
         save(new Project(title: "Project 2943", description: "Another project", link: "https://andiswiss.ch/project2", date: today - 200))
         save(new Project(title: "Project 3", description: "Yet another project", link: "https://andiswiss.ch/project3", date: today -2))
-        save(new Project(title: "Project 4", description: "Yet another project", link: "https://andiswiss.ch/project4", date: aDate))
+        save(new Project(title: "Project 4", description: "another project", link: "https://andiswiss.ch/project4", date: aDate))
     }
 
     static save(domainObject) {
