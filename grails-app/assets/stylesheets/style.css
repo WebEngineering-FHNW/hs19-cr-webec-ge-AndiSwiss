@@ -2358,3 +2358,7 @@ select.mobile-device {
     font-size: 14px;
     font-style: italic;
 }
+
+.gallery-grid {
+    padding: 10px;
+}

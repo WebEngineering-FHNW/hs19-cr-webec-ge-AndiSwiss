@@ -239,7 +239,8 @@
     <div class="container">
         <div class="section-title text-left">
             <h3>Portfolio</h3>
-            <p>Here are some projects I was working on recently:</p>
+
+            <p>Here are some projects I was working on:</p>
         </div><!-- end title -->
 
         <div class="gallery-menu row">
@@ -253,57 +254,149 @@
             </div>
         </div>
 
+
         <div class="gallery-list row">
             <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="${resource(dir: "images/portfolioPics", file: "gallery_img-01.jpg")}" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-02.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="portfolioPics/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-02.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-03.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="portfolioPics/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-03.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-04.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="portfolioPics/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-04.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
 
+
             <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-05.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="portfolioPics/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-05.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-                <div class="gallery-single fix">
-                    <asset:image src="portfolioPics/gallery_img-06.jpg" class="img-fluid" alt="Image"/>
-                    <div class="img-overlay">
-                        <a href="portfolioPics/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                <div class="post-box">
+                    <div class="post-thumb">
+                        <asset:image src="portfolioPics/gallery_img-06.jpg" class="img-fluid" alt="Image"/>
+
+                        <div class="date">
+                            <span>10</span>
+                            <span>Dec</span>
+                        </div>
+                    </div>
+
+                    <div class="post-info">
+                        <h4>Project title</h4>
+                        <ul>
+                            <li>by Andreas</li>
+                            <li>- Dec 10, 2019</li>
+                            <li><a href="#"><b>Comments</b></a></li>
+                        </ul>
+
+                        <p>Project description. With some details and more and more and more and more text....</p>
                     </div>
                 </div>
             </div>
