@@ -269,7 +269,8 @@
                 <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
                     <div class="post-box">
                         <div class="post-thumb">
-                            <asset:image src="portfolioPics/${project.pictureName}" class="img-fluid post-pic" alt="Image"/>
+                            <asset:image src="portfolioPics/${project.pictureName}" class="img-fluid post-pic"
+                                         alt="Image"/>
 
                             <div class="date">
                                 <g:formatDate format="MM-yyyy" date="${project.date}"/>
@@ -278,12 +279,16 @@
 
                         <div class="post-info">
                             <h4>${project.title}</h4>
-                            <ul>
-                                <li><g:formatDate format="yyyy-MM-dd" date="${project.date}"/></li>
-                                <li><a href="#"><b>Projekt-Link</b></a></li>
-                            </ul>
+
+                            <p>
+                                <span class="date-text"><g:formatDate format="yyyy-MM-dd"
+                                                                      date="${project.date}"/></span>
+                                <a href="${project.link}" target="_blank"><b>link to project</b></a>
+                            </p>
 
                             <p>${project.description}</p>
+
+                            <p><span class="text-technologies">Technologies used:</span> ${project.technologies}</p>
                         </div>
                     </div>
                 </div>

@@ -2380,3 +2380,13 @@ select.mobile-device {
     padding: 5px 5px 0 5px;
     align-content: center;
 }
+
+.text-technologies {
+    display: inline-block;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.date-text {
+    font-style: italic;
+}
