@@ -269,7 +269,7 @@
                 <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
                     <div class="post-box">
                         <div class="post-thumb">
-                            <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
+                            <asset:image src="portfolioPics/${project.pictureName}" class="img-fluid post-pic" alt="Image"/>
 
                             <div class="date">
                                 <g:formatDate format="MM-yyyy" date="${project.date}"/>

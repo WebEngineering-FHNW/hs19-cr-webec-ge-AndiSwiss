@@ -1,6 +1,5 @@
 package exercise
 
-import static org.springframework.http.HttpStatus.NOT_FOUND
 import static org.springframework.http.HttpStatus.OK
 import static org.springframework.http.HttpStatus.CREATED
 import grails.gorm.transactions.Transactional
@@ -100,9 +99,5 @@ class ProjectController {
                         default: 'Project'), params.id])
             }
         }
-    }
-
-    def fullDate() {
-        respond "1.1.1977"
     }
 }

@@ -1475,6 +1475,8 @@ hr.invis1 {
 
 .post-thumb{
 	position: relative;
+    width: 100%;
+    text-align: center;
 }
 
 .post-box{
@@ -2369,4 +2371,12 @@ select.mobile-device {
 
 .nav-back-end {
     background-color: rgba(158, 0, 0, 0.74);
+}
+
+.post-pic {
+    max-height: 300px;
+    width: auto;
+    display: inline-block;
+    padding: 5px 5px 0 5px;
+    align-content: center;
 }
