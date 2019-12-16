@@ -47,7 +47,6 @@ class BootStrap {
                 pictureName: "project_chatclient.png").save()
 
         new Project(title: "Project IP34 - Jim",
-                link: "https://www.cs.technik.fhnw.ch/bitbucket20/projects/VT341902/repos/ip34-19vt-cbasp-app",
                 description: "This is main project in my studies at FHNW during my 3rd and 4th semester.",
                 technologies: "Flutter, Dart, ...",
                 date: new SimpleDateFormat(pattern).parse("2019-09-18").clearTime(),

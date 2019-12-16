@@ -281,12 +281,18 @@
                             <h4>${project.title}</h4>
 
                             <p>
-                                <span class="date-text"><g:formatDate format="yyyy-MM-dd"
+                                <span class="italic-text"><g:formatDate format="yyyy-MM-dd"
                                                                       date="${project.date}"/></span>
-                                <a href="${project.link}" target="_blank"><b>link to project</b></a>
+
+                                <g:if test="${project.link}">
+                                    <a href="${project.link}" target="_blank"><b>link to project</b></a>
+                                </g:if>
+                                <g:else>
+                                    <span class="no-link">(no link yet)</span>
+                                </g:else>
                             </p>
 
-                            <p>${project.description}</p>
+                            <p><span class="description-text">${project.description}</span></p>
 
                             <p><span class="text-technologies">Technologies used:</span> ${project.technologies}</p>
                         </div>

@@ -2387,6 +2387,16 @@ select.mobile-device {
     font-weight: bold;
 }
 
-.date-text {
+.italic-text {
     font-style: italic;
+}
+
+.no-link {
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+.description-text {
+    display: inline-block;
+    padding-top: 5px;
 }

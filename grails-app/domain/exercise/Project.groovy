@@ -22,6 +22,7 @@ class Project {
         title(maxSize: 255)
         title(blank: false)
         link(url: true)
+        link(nullable: true)
         pictureName(maxSize: 255)
         technologies(maxSize: 255)
     }
