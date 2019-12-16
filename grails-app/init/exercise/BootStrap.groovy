@@ -19,7 +19,8 @@ class BootStrap {
         Date project5Date = new SimpleDateFormat(pattern).parse("2019-11-15").clearTime()
         save(new Project(title: "webeC project", description: "This is a web project, which I realized in class at FHNW. " +
                 "This was a single person assignment, so all work you see here is from me. \n" +
-                "We used the technologies Grails / Groovy for this project.", link: "https://andiswiss.ch/project4",
+                "We used the technologies Grails / Groovy for this project.",
+                link: "https://github.com/WebEngineering-FHNW/hs19-cr-webec-ge-AndiSwiss",
                 date: project5Date))
     }
 

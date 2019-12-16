@@ -6,7 +6,7 @@
 --%>
 
 <!DOCTYPE html>
-<%@  page import="exercise.Project" %>
+<%@ page import="exercise.Project" %>
 <html lang="en">
 <head>
     <!-- Basic -->
@@ -264,7 +264,7 @@
 
         <div class="gallery-list row">
 
-            <!-- One portfolio item -->
+        <!-- One portfolio item -->
             <g:each in="${Project.list()}" var="project">
                 <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
                     <div class="post-box">
@@ -272,17 +272,14 @@
                             <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
 
                             <div class="date">
-                            <!-- TODO: get month and year from the project date -->
-                                <span>12</span> -
-                                <span>2019</span>
+                                <g:formatDate format="MM-yyyy" date="${project.date}"/>
                             </div>
                         </div>
 
                         <div class="post-info">
                             <h4>${project.title}</h4>
                             <ul>
-                                <li>by Andreas</li>
-                                <li>- ${project.date}</li>
+                                <li><g:formatDate format="yyyy-MM-dd" date="${project.date}"/></li>
                                 <li><a href="#"><b>Projekt-Link</b></a></li>
                             </ul>
 
