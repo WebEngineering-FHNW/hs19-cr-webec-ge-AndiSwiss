@@ -2362,3 +2362,7 @@ select.mobile-device {
 .gallery-grid {
     padding: 10px;
 }
+
+.nav-back-end {
+    background-color: rgba(158, 0, 0, 0.74);
+}
