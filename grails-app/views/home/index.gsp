@@ -78,7 +78,7 @@
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item nav-back-end">
-                    <a class="nav-link js-scroll-trigger" href="project">Back-End</a>
+                    <g:link controller="project" class="nav-link js-scroll-trigger">Back-End</g:link>
                 </li>
             </ul>
         </div>

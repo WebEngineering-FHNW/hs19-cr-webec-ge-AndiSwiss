@@ -2363,6 +2363,10 @@ select.mobile-device {
     padding: 10px;
 }
 
+.nav-item {
+    padding: 0 10px;
+}
+
 .nav-back-end {
     background-color: rgba(158, 0, 0, 0.74);
 }
