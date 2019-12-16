@@ -6,6 +6,7 @@
 --%>
 
 <!DOCTYPE html>
+<%@  page import="exercise.Project" %>
 <html lang="en">
 <head>
     <!-- Basic -->
@@ -81,6 +82,7 @@
     </div>
 </nav>
 
+<!-- First section with picture and title and clouds -->
 <section id="home" class="main-banner parallaxie"
          style="background: url('${resource(dir: "images", file: "spark_uetliberg.jpg")}')">
     <div class="heading">
@@ -130,6 +132,7 @@
     </path>
 </svg>
 
+<!-- About-section -->
 <div id="about" class="section wb">
     <div class="container">
         <div class="row">
@@ -162,6 +165,7 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
+<!-- Services-section -->
 <div id="services" class="section lb">
     <div class="container">
         <div class="section-title text-left">
@@ -235,6 +239,7 @@
     </div><!-- end container -->
 </div><!-- end section -->
 
+<!-- Portfolio-section -->
 <div id="portfolio" class="section lb">
     <div class="container">
         <div class="section-title text-left">
@@ -254,158 +259,41 @@
             </div>
         </div>
 
-
         <div class="gallery-list row">
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
 
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
+            <!-- One portfolio item -->
+            <g:each in="${Project.list()}" var="project">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+                    <div class="post-box">
+                        <div class="post-thumb">
+                            <asset:image src="portfolioPics/gallery_img-01.jpg" class="img-fluid" alt="Image"/>
+
+                            <div class="date">
+                            <!-- TODO: get month and year from the project date -->
+                                <span>12</span> -
+                                <span>2019</span>
+                            </div>
+                        </div>
+
+                        <div class="post-info">
+                            <h4>${project.title}</h4>
+                            <ul>
+                                <li>by Andreas</li>
+                                <li>- ${project.date}</li>
+                                <li><a href="#"><b>Projekt-Link</b></a></li>
+                            </ul>
+
+                            <p>${project.description}</p>
                         </div>
                     </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
                 </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-02.jpg" class="img-fluid" alt="Image"/>
-
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-03.jpg" class="img-fluid" alt="Image"/>
-
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-04.jpg" class="img-fluid" alt="Image"/>
-
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-05.jpg" class="img-fluid" alt="Image"/>
-
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-                <div class="post-box">
-                    <div class="post-thumb">
-                        <asset:image src="portfolioPics/gallery_img-06.jpg" class="img-fluid" alt="Image"/>
-
-                        <div class="date">
-                            <span>10</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-
-                    <div class="post-info">
-                        <h4>Project title</h4>
-                        <ul>
-                            <li>by Andreas</li>
-                            <li>- Dec 10, 2019</li>
-                            <li><a href="#"><b>Comments</b></a></li>
-                        </ul>
-
-                        <p>Project description. With some details and more and more and more and more text....</p>
-                    </div>
-                </div>
-            </div>
+            </g:each>
         </div>
     </div>
 </div>
 </div>
 
-
+<!-- Copyrights-section -->
 <div class="copyrights">
     <div class="container">
         <div class="footer-distributed">
