@@ -2432,6 +2432,10 @@ select.mobile-device {
     background-color: rgba(158, 0, 0, 0.74);
 }
 
+.nav-logout {
+    background-color: rgba(134, 94, 97, 0.69);
+}
+
 .post-pic {
     max-height: 300px;
     width: auto;

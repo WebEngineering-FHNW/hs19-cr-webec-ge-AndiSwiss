@@ -60,12 +60,9 @@
             <li class="nav-item">
                 <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
             </li>
-            <li class="nav-item nav-back-end">
-                <g:link controller="project" class="nav-link js-scroll-trigger">Back-End</g:link>
-            </li>
-
+        <!-- Different handling of the buttons, whether you are already logged in or not: -->
             <sec:ifLoggedIn>
-                <li class="nav-item">
+                <li class="nav-item nav-logout">
                     <g:link controller="logout" class="nav-link js-scroll-trigger">Logout</g:link>
                 </li>
             </sec:ifLoggedIn>

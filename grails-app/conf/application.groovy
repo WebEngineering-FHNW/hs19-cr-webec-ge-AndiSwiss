@@ -12,6 +12,8 @@ grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.logout.afterLogoutUrl = "/"
 
 
+grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/project'
+
 grails.plugin.springsecurity.securityConfigType = 'Annotation'
 // Extra rules that cannot be mapped using annotations
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
