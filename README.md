@@ -65,6 +65,8 @@ of errors. And it doesn't even recognize any Java-Syntax in the .groovy files (n
 [https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896](https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896)
 [https://discuss.gradle.org/t/how-to-specify-java-version-when-running-gradle-build/17489](https://discuss.gradle.org/t/how-to-specify-java-version-when-running-gradle-build/17489)
 
+**POSSIBLE SOLUTION**: I have set the Java Level to 12.0.2 OpenJDK -> now, there is no more funny reverting everytime to Java 11, when I run
+build.gradle (just some red warnings when starting the application - but these are the same we had in all our grails projects)
 
 ## Project grading 
 
