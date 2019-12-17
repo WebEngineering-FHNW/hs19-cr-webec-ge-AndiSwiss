@@ -2,7 +2,7 @@ package exercise
 
 import grails.plugin.springsecurity.annotation.Secured
 
-@Secured(["ROLE_USER", "ROLE_ADMIN"])
+@Secured(["permitAll"])
 class HomeController {
 
     def index() { }
