@@ -85,6 +85,17 @@ class BootStrap {
                 cat_individual_work: true,
                 cat_ui_ux: true,
                 cat_core_programming: true))
+
+        // adding a user for the back-end login:
+        def userRole = new Role('ROLE_USER').save()
+        def admin = new User('admin', 'adminpw').save()
+        UserRole.create admin, userRole
+        UserRole.withSession {
+            it.flush()
+            it.clear()
+        }
+
+
     }
 
     static save(domainObject) {
