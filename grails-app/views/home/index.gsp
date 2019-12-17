@@ -66,16 +66,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <g:link controller="home" fragment="home" class="nav-link js-scroll-trigger">Home</g:link>
+                    <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+                    <!-- Following would be grails style, but then it doesn't scroll smoothly to the target,
+                    but actually jumps to the subfolder /home/index.html#home. And also the animated line below the
+                    actual position would disappear. This is not nice, so I reverted to my previous way.
+                    In main.gsp, it's still the 'grails-way'.-->
+%{--                    <g:link fragment="home" class="nav-link js-scroll-trigger">Home</g:link>--}%
                 </li>
                 <li class="nav-item">
-                    <g:link controller="home" fragment="about" class="nav-link js-scroll-trigger">About Me</g:link>
+                    <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <g:link controller="home" fragment="services" class="nav-link js-scroll-trigger">Focus areas</g:link>
+                    <a class="nav-link js-scroll-trigger" href="#services">Focus areas</a>
                 </li>
                 <li class="nav-item">
-                    <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
 
                 <!-- Different handling of the buttons, whether you are already logged in or not: -->
