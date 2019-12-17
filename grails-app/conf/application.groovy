@@ -7,6 +7,11 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'exercise.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'exercise.UserRole'
 grails.plugin.springsecurity.authority.className = 'exercise.Role'
 
+// For logout functionality
+grails.plugin.springsecurity.logout.postOnly = false
+grails.plugin.springsecurity.logout.afterLogoutUrl = "/"
+
+
 grails.plugin.springsecurity.securityConfigType = 'Annotation'
 // Extra rules that cannot be mapped using annotations
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
