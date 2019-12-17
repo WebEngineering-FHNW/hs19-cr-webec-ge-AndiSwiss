@@ -2463,3 +2463,7 @@ select.mobile-device {
     display: inline-block;
     padding-top: 5px;
 }
+
+.padding-below-nav {
+    padding-top: 100px;
+}

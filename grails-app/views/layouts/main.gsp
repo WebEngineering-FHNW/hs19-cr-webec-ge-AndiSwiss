@@ -39,37 +39,47 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
-    <!-- Maybe later: enter here a logo again:-->
-%{--    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>--}%
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-                <g:link controller="home" fragment="home" class="nav-link js-scroll-trigger">Home</g:link>
-            </li>
-            <li class="nav-item">
-                <g:link controller="home" fragment="about" class="nav-link js-scroll-trigger">About Me</g:link>
-            </li>
-            <li class="nav-item">
-                <g:link controller="home" fragment="services" class="nav-link js-scroll-trigger">Focus areas</g:link>
-            </li>
-            <li class="nav-item">
-                <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
-            </li>
-        <!-- Different handling of the buttons, whether you are already logged in or not: -->
-            <sec:ifLoggedIn>
-                <li class="nav-item nav-logout">
-                    <g:link controller="logout" class="nav-link js-scroll-trigger">Logout</g:link>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <g:link controller="home" fragment="home" class="nav-link js-scroll-trigger">Home</g:link>
                 </li>
-            </sec:ifLoggedIn>
-        </ul>
-    </div>
+                <li class="nav-item">
+                    <g:link controller="home" fragment="about" class="nav-link js-scroll-trigger">About Me</g:link>
+                </li>
+                <li class="nav-item">
+                    <g:link controller="home" fragment="services" class="nav-link js-scroll-trigger">Focus areas</g:link>
+                </li>
+                <li class="nav-item">
+                    <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
+                </li>
 
+            <!-- Different handling of the buttons, whether you are already logged in or not: -->
+                <sec:ifLoggedIn>
+                    <li class="nav-item nav-logout">
+                        <g:link controller="logout" class="nav-link js-scroll-trigger">Logout</g:link>
+                    </li>
+                </sec:ifLoggedIn>
+            </ul>
+        </div>
+    </div>
 </nav>
+
+<!-- The following padding is necessary, otherwise, some elements of the controller are not visible: -->
+<div class="padding-below-nav"></div>
+
 
 <g:layoutBody/>
 
