@@ -1,6 +1,60 @@
-/*------------------------------------------------------------------
-    Version: 1.0
--------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------
+EXTERNAL: Free CSS template from https://www.free-css.com/free-css-templates/page246/dominic
+
+I changed many details, but I used the general style of the design. I had to change many things for it to work
+with the grails framework.
+
+
+This free CSS template includes the following files:
+animate.css		custom.css		font-awesome.min.css	responsive.css
+bootstrap.min.css	flaticon.css		owl.carousel.css	versions.css
+camera.css		font-awesome.css	prettyPhoto.css
+
+./fonts:
+Flaticon.eot				fontawesome-webfont.eot			glyphicons-halflings-regular.eot
+Flaticon.svg				fontawesome-webfont.svg			glyphicons-halflings-regular.svg
+Flaticon.ttf				fontawesome-webfont.ttf			glyphicons-halflings-regular.ttf
+Flaticon.woff				fontawesome-webfont.woff		glyphicons-halflings-regular.woff
+FontAwesome.otf				fontawesome-webfont.woff2		glyphicons-halflings-regular.woff2
+
+./images:
+ajax-loader.gif		bg.png			favicon.ico		prettyPhoto
+apple-touch-icon.png	country-quilt-dark.png	logo.png
+
+../images/prettyPhoto:
+dark_rounded	dark_square	default		facebook	light_rounded	light_square
+
+../images/prettyPhoto/dark_rounded:
+btnNext.png		contentPattern.png	loader.gif
+btnPrevious.png		default_thumbnail.gif	sprite.png
+
+../images/prettyPhoto/dark_square:
+btnNext.png		contentPattern.png	loader.gif
+btnPrevious.png		default_thumbnail.gif	sprite.png
+
+../images/prettyPhoto/default:
+default_thumb.png	sprite.png		sprite_prev.png		sprite_y.png
+loader.gif		sprite_next.png		sprite_x.png
+
+../images/prettyPhoto/facebook:
+btnNext.png			contentPatternLeft.png		default_thumbnail.gif
+btnPrevious.png			contentPatternRight.png		loader.gif
+contentPatternBottom.png	contentPatternTop.png		sprite.png
+
+../images/prettyPhoto/light_rounded:
+btnNext.png		btnPrevious.png		default_thumbnail.gif	loader.gif		sprite.png
+
+../images/prettyPhoto/light_square:
+btnNext.png		btnPrevious.png		default_thumbnail.gif	loader.gif		sprite.png
+
+../javascripts:
+all.js				hoverdir.js			jquery.prettyPhoto.js		parallaxie.js
+animate.js			images-loded.min.js		jquery.vide.js			portfolio.js
+contact_me.js			isotope.min.js			map.js				retina.js
+custom.js			jqBootstrapValidation.js	modernizr.js			scroll.js
+headline.js			jquery.easing.1.3.js		owl.carousel.js
+
+-------------------------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
     IMPORT FONTS
@@ -2353,6 +2407,11 @@ select.mobile-device {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+/*------------------------------------------------------------------------------------------------
+    Here are all my changes - in the previous CSS, I also made some changes.
+-------------------------------------------------------------------------------------------------*/
 
 
 #foto-spark {
