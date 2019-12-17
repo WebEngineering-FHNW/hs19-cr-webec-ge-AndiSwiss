@@ -255,9 +255,10 @@
             <div class="col-md-12">
                 <div class="button-group filter-button-group text-left">
                     <button class="active" data-filter="*">All</button>
-                    <button data-filter=".gal_a">Web Development</button>
-                    <button data-filter=".gal_b">Category 2 (tbd)</button>
-                    <button data-filter=".gal_c">Category 3 (tbd)</button>
+                    <button data-filter=".cat_group_work">Group work</button>
+                    <button data-filter=".cat_individual_work">Individual work</button>
+                    <button data-filter=".cat_ui_ux">UI/UX</button>
+                    <button data-filter=".cat_core_programming">Core programming</button>
                 </div>
             </div>
         </div>

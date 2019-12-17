@@ -22,9 +22,10 @@ class BootStrap {
                 technologies: "Java",
                 date: new SimpleDateFormat(pattern).parse("2018-03-11").clearTime(),
                 pictureName: "project_sudoku.png",
-                catA: true,
-                catB: false,
-                catC: true).save()
+                cat_group_work: false,
+                cat_individual_work: true,
+                cat_ui_ux: false,
+                cat_core_programming: true).save()
 
         new Project(title: "Project IP12 - Webshop",
                 link: "https://web.fhnw.ch/technik/projekte/i/ip219vt/webshop_2/index.html",
@@ -32,9 +33,10 @@ class BootStrap {
                 technologies: "PHP, JavaScript, Laravel, ...",
                 date: new SimpleDateFormat(pattern).parse("2018-09-13").clearTime(),
                 pictureName: "projekt_ip12_webshop.jpg",
-                catA: true,
-                catB: false,
-                catC: true).save()
+                cat_group_work: true,
+                cat_individual_work: false,
+                cat_ui_ux: true,
+                cat_core_programming: false).save()
 
         new Project(title: "Nonogram Solver",
                 link: "https://github.com/AndiSwiss/Nonogram",
@@ -43,9 +45,10 @@ class BootStrap {
                 technologies: "Java, Processing 3",
                 date: new SimpleDateFormat(pattern).parse("2018-12-09").clearTime(),
                 pictureName: "project_nonogram.png",
-                catA: true,
-                catB: false,
-                catC: true).save()
+                cat_group_work: false,
+                cat_individual_work: true,
+                cat_ui_ux: true,
+                cat_core_programming: true).save()
 
         new Project(title: "ChatClient 'AChat'",
                 link: "https://github.com/AndiSwiss/FHNW_OOP2_ChatClient",
@@ -54,18 +57,20 @@ class BootStrap {
                 technologies: "Java, JavaFX",
                 date: new SimpleDateFormat(pattern).parse("2019-06-16").clearTime(),
                 pictureName: "project_chatclient.png",
-                catA: true,
-                catB: false,
-                catC: true).save()
+                cat_group_work: false,
+                cat_individual_work: true,
+                cat_ui_ux: true,
+                cat_core_programming: true).save()
 
         new Project(title: "Project IP34 - Jim",
                 description: "This is main project in my studies at FHNW during my 3rd and 4th semester.",
                 technologies: "Flutter, Dart, ...",
                 date: new SimpleDateFormat(pattern).parse("2019-09-18").clearTime(),
                 pictureName: "project_ip34_jim.png",
-                catA: true,
-                catB: false,
-                catC: true).save()
+                cat_group_work: true,
+                cat_individual_work: false,
+                cat_ui_ux: true,
+                cat_core_programming: true).save()
 
         // Or different way of defining a project:
         save(new Project(title: "webeC project",
@@ -76,9 +81,10 @@ class BootStrap {
                 link: "https://github.com/WebEngineering-FHNW/hs19-cr-webec-ge-AndiSwiss",
                 date: new SimpleDateFormat(pattern).parse("2019-11-15").clearTime(),
                 pictureName: "project_webec.png",
-                catA: true,
-                catB: false,
-                catC: true))
+                cat_group_work: false,
+                cat_individual_work: true,
+                cat_ui_ux: true,
+                cat_core_programming: true))
     }
 
     static save(domainObject) {

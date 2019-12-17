@@ -8,17 +8,14 @@ class Project {
     Date date
     String pictureName
     String technologies
-    Boolean catA
-    Boolean catB
-    Boolean catC
 
-    // todo: introduce a category enum -> which I can then use in the Portfolio front-end as a filter in
-    //  data-filter=".gal_a"   (and .gal_b  and .gal_c)
-    //  candidates:
-    //     - group-project
-    //     - individual work
-    //     - UI/UX
-    //     - core programming
+    // Categories for the front-end filter of the projects.
+    // These are individual boolean values, since a multiple selection is possible
+    Boolean cat_group_work
+    Boolean cat_individual_work
+    Boolean cat_ui_ux
+    Boolean cat_core_programming
+
 
 
     static constraints = {
@@ -36,6 +33,11 @@ class Project {
     }
 
     def getCategory() {
-        return "gal_b"
+        StringBuilder sb = new StringBuilder()
+        if (cat_group_work) sb.append(" cat_group_work")
+        if (cat_individual_work) sb.append(" cat_individual_work")
+        if (cat_ui_ux) sb.append(" cat_ui_ux")
+        if (cat_core_programming) sb.append(" cat_core_programming")
+        return sb.toString()
     }
 }
