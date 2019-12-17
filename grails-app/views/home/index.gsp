@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Mobile Metas  -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Site Metas -->
     <title>Andreas Ambühl - Application Developer</title>
@@ -66,16 +66,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+                    <g:link controller="home" fragment="home" class="nav-link js-scroll-trigger">Home</g:link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+                    <g:link controller="home" fragment="about" class="nav-link js-scroll-trigger">About Me</g:link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Focus areas</a>
+                    <g:link controller="home" fragment="services" class="nav-link js-scroll-trigger">Focus areas</g:link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
                 </li>
                 <li class="nav-item nav-back-end">
                     <g:link controller="project" class="nav-link js-scroll-trigger">Back-End</g:link>
