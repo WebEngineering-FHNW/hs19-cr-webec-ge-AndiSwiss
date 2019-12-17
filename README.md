@@ -37,8 +37,10 @@ I said _short description_... :wink:. You might start.
 
 #### Start the project: 
 `grailsw run-app`
-(NOTE: after running 'build.gradle', reset the java-version to 1.8 (because somehow, IntelliJ IDEA sets the java version to 11.0.3 (IntelliJ OpenJDK), and that 
-produces a ton of errors. And it doesn't even recognize any Java-Syntax in the .groovy files (not even 'String'!!))
+Logins available:
+user (pw: user) -> let's you see just the front-end
+admin (pw: admin) -> let's you see the front-end and the back-end 
+(with the red 'BACK-END'-button in the menu)
 
 #### Test the project:  
 `grailsw test-app`
@@ -57,16 +59,12 @@ implement many features. It was very time consuming and difficult to integrate t
 Most interesting was the part where I could finally get the category filter to work (the buttons where you can filter my projects by "Group work", "Indvidual work" and so on.
 
 #### Other comments:
-**Weird behaviour (other colleagues have as well):** Every time I run build.gradle, IntelliJ IDEA sets the java version to 11.0.3 (IntelliJ OpenJDK). Then I have to manually set it back to Java 1.8, otherwise I have a ton
-of errors. And it doesn't even recognize any Java-Syntax in the .groovy files (not even 'String'!!). I tried many things, no success at all:
-[https://stackoverflow.com/questions/27861658/how-specify-the-required-java-version-in-a-gradle-build/27861773](https://stackoverflow.com/questions/27861658/how-specify-the-required-java-version-in-a-gradle-build/27861773)
-[https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896](https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896)
-[https://discuss.gradle.org/t/gradle-is-not-using-correct-java-compiler/1794](https://discuss.gradle.org/t/gradle-is-not-using-correct-java-compiler/1794)
-[https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896](https://discuss.gradle.org/t/how-does-gradle-determine-which-jdk-to-use/19896)
-[https://discuss.gradle.org/t/how-to-specify-java-version-when-running-gradle-build/17489](https://discuss.gradle.org/t/how-to-specify-java-version-when-running-gradle-build/17489)
+**Set Java level to 12.xxx** If you use Java 1.8, there is a weird behaviour: each time when build.gradle is executed, 
+your Java level is automatically set to 11, which is not really working. 
 
-**POSSIBLE SOLUTION**: I have set the Java Level to 12.0.2 OpenJDK -> now, there is no more funny reverting everytime to Java 11, when I run
-build.gradle (just some red warnings when starting the application - but these are the same we had in all our grails projects)
+**Security** I tried to NOT secure the front end (the main page), meaning you can access without a login. Only the back-end (where you can CRUD the projects) should
+be secured for admin-access. After more than 1-2 hours of trying, I give up; I could not find any possible solution.
+However, if I would want this project to be my actual homepage, this for sure would have to work.
 
 ## Project grading 
 
