@@ -80,6 +80,12 @@
                 <li class="nav-item nav-back-end">
                     <g:link controller="project" class="nav-link js-scroll-trigger">Back-End</g:link>
                 </li>
+
+                <sec:ifLoggedIn>
+                    <li class="nav-item">
+                        <g:link controller="logout" class="nav-link js-scroll-trigger">Logout</g:link>
+                    </li>
+                </sec:ifLoggedIn>
             </ul>
         </div>
     </div>
@@ -283,7 +289,7 @@
 
                             <p>
                                 <span class="italic-text"><g:formatDate format="yyyy-MM-dd"
-                                                                      date="${project.date}"/></span>
+                                                                        date="${project.date}"/></span>
 
                                 <g:if test="${project.link}">
                                     <a href="${project.link}" target="_blank"><b>link to project</b></a>
@@ -293,7 +299,7 @@
                                 </g:else>
                             </p>
 
-                            <p><span class="description-text">${project.description} </span></p>
+                            <p><span class="description-text">${project.description}</span></p>
 
                             <p><span class="text-technologies">Technologies used:</span> ${project.technologies}</p>
                         </div>
