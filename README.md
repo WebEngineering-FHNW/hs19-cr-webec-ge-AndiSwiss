@@ -36,14 +36,12 @@ I said _short description_... :wink:. You might start.
 ## Project delivery <to be filled by student>
 
 #### Start the project: 
-`grailsw run-app`
-Logins available:
-user (pw: user) -> let's you see just the front-end
-admin (pw: admin) -> let's you see the front-end and the back-end 
-(with the red 'BACK-END'-button in the menu)
+`grailsw run-app` or `./grailsw run-app` respectively
+
+Login available: 'admin' (pw: 'admin') -> let's you also see the back-end for full CRUD operations on the projects.
 
 #### Test the project:  
-`grailsw test-app`
+`grailsw test-app` or `./grailsw test-app` respectively
 
 #### Hand-written, static HTML (project description)
 [./index.html](./index.html) in the root-folder
@@ -54,17 +52,18 @@ header of [.grails-app/assets/stylesheets/style.css](https://github.com/WebEngin
 See also commit [03b7a39 "EXTERNAL resources marked as such:..."](https://github.com/WebEngineering-FHNW/hs19-cr-webec-ge-AndiSwiss/commit/03b7a39805f1721970e458a655b4b539598830dc)
 
 #### I'm particular proud of:
-Even though I could not implement many of the desired features of my commit proposal in the section "Possible Extensions (subject to change)", I was able to 
+Even though I could not implement some of the desired features of my commit proposal in the section "Possible Extensions (subject to change)", I was able to 
 implement many features. It was very time consuming and difficult to integrate the CSS template to work with grails and to finally really show the projects.
+But I'm very happy with the result, because the page feels right for me.
 Most interesting was the part where I could finally get the category filter to work (the buttons where you can filter my projects by "Group work", "Indvidual work" and so on.
+And also finally getting the whole security-features the way I really wanted to.
 
 #### Other comments:
-**Set Java level to 12.xxx** If you use Java 1.8, there is a weird behaviour: each time when build.gradle is executed, 
-your Java level is automatically set to 11, which is not really working. 
-
-**Security** I tried to NOT secure the front end (the main page), meaning you can access without a login. Only the back-end (where you can CRUD the projects) should
-be secured for admin-access. After more than 1-2 hours of trying, I give up; I could not find any possible solution.
-However, if I would want this project to be my actual homepage, this for sure would have to work.
+**Set Java level to 12!** If you use Java 1.8, there is a weird behaviour: each time when build.gradle is executed, 
+your Java level is automatically set to 11, which is not really working. Side-note: when running the project with Java 12, then
+some red Warning appear when starting the application. This was happening will all our grails-application; the application should still fully work.
+However, in Java 1.8, those red warnings are not shown, but then you have the previously described weird behaviour. I personally prefer some red
+warnings comparing to weird behaviour :smile:, so I stay with Java 12.
 
 ## Project grading 
 

@@ -43,19 +43,21 @@
                         </li>
                         <li>The application is fully responsive (except for the backend (Project-Controller)</li>
                         <li>Domain-Model with various fields including constraints</li>
-                        <li>Showing all the projects, which are inside the database</li>
+                        <li>Front-page shows all the projects, which are residing the database</li>
                         <li>Six example projects already provided via bootstrapping</li>
                         <li>Projects can show a previously uploaded image (image-upload-functionality not yet
                             programmed)
                         </li>
                         <li>Projects can be dynamically filtered (by four categories). Filtering happens via
-                            CSS-filter
+                            CSS-filter and the defined categories in the project-database-entries
                         </li>
                         <li>Unit-tests, including tests for my custom method 'getCategory()' in the Project Domain Model
                             (run in the terminal with './grailsw test-app')
                         </li>
-                        <li>Security implemented. Login to the front-end with  user/user  -- back-end can only be
-                            reached, when admin/admin is logged in
+                        <li>Security implemented: BACK-END can only be reached, when admin/admin is logged in</li>
+                        <li>Full navigation, including dynamically changing buttons for "LOGIN FOR BACK-END",
+                            "BACK-END", "LOGOUT", depending on whether you are logged in or not and depending on which
+                            page you currently are (navigation is also fully responsive)
                         </li>
                     </ul>
                     <p class="picture-info">
@@ -134,7 +136,8 @@
 
             <div class="img-box-small">
                 <div class="right-box-pro wow fadeIn">
-                    <img class="img-fluid img-rounded img-small" src="grails-app/assets/images/screenshot_of_app2_responsive.jpg"
+                    <img class="img-fluid img-rounded img-small"
+                         src="grails-app/assets/images/screenshot_of_app2_responsive.jpg"
                          alt="2nd screenshot of the app (responsive version)">
                 </div><!-- end media -->
             </div><!-- end col -->
