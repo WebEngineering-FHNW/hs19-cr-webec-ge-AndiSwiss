@@ -35,18 +35,26 @@ I said _short description_... :wink:. You might start.
 
 ## Project delivery <to be filled by student>
 
-How to start the project: (if other than `grailsw run-app`)
+How to start the project: `grailsw run-app`
 
-How to test the project:  (if other than `grailsw test-app`)
+How to test the project:  `grailsw test-app`
 
 Hand-written, static HTML 
-project description:      [index.html](./index.html) in the root-folder
+project description:      [./index.html](./index.html) in the root-folder
 
-External contributions:
+#### External contributions:
+I used a free CSS template and adopted it to my needs. See full description, source and a full file list of the used template on the
+header of [.grails-app/assets/stylesheets/style.css](https://github.com/WebEngineering-FHNW/hs19-cr-webec-ge-AndiSwiss/blob/master/grails-app/assets/stylesheets/style.css)
+See also commit [03b7a39 "EXTERNAL resources marked as such:..."](https://github.com/WebEngineering-FHNW/hs19-cr-webec-ge-AndiSwiss/commit/03b7a39805f1721970e458a655b4b539598830dc)
 
-Other comments: 
 
-I'm particular proud of:
+#### I'm particular proud of:
+Even though I could not implement many of the desired features of my commit proposal in the section "Possible Extensions (subject to change)", I was able to 
+implement many features. It was very time consuming and difficult to integrate the CSS template to work with grails and to finally really show the projects.
+Most interesting was the part where I could finally get the category filter to work (the buttons where you can filter my projects by "Group work", "Indvidual work" and so on.
+
+#### Other comments:
+I really want to be able to use this project as my actual website, but for this, I will need to include a login (security) to the backend and a picture upload functionality.
 
 
 ## Project grading 
