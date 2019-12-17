@@ -67,5 +67,5 @@ warnings comparing to weird behaviour :smile:, so I stay with Java 12.
 
 ## Project grading 
 
-(I'm finished and ready for grading...)
+(I'm finished and ready for grading.)
 < to be filled by lecturer>
