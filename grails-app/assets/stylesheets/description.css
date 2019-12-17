@@ -1,0 +1,38 @@
+/*
+Custom CSS which I added for the static index.html (project description page)
+ */
+
+.heading {
+    padding: 30px;
+}
+
+#foto-spark {
+    font-size: 150%;
+}
+
+li {
+    list-style-type: upper-roman;
+}
+
+#foto-spark a {
+    color: #d0d0d0;
+}
+
+#foto-spark a:hover {
+    color: #ffffff;
+}
+
+.picture-info {
+    padding-top: 50px;
+    font-style: italic;
+    color: black;
+}
+
+.img-small {
+    max-height: 458px;
+}
+
+.img-box-small {
+    padding-right: 15px;
+    padding-left: 15px;
+}

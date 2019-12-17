@@ -5,93 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webeC Project Description</title>
 
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="grails-app/assets/stylesheets/bootstrap.min.css">
     <!-- Site CSS -->
+    <link rel="stylesheet" href="grails-app/assets/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="grails-app/assets/stylesheets/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="grails-app/assets/stylesheets/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="grails-app/assets/stylesheets/custom.css">
-    <!-- Modernizr -->
-    <script src="grails-app/assets/javascripts/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" href="grails-app/assets/stylesheets/description.css">
 
 </head>
-<body id="page-top" class="politics_version">
+<body>
 
 
-<header class="hero">
-    <h1 class="hero-title">webeC-Project: Portfolio Homepage</h1>
-    <p class="hero-lead container">
-        This project is about creating a personal website displaying my projects as a portfolio.
-        It was realized as a CMS-system in Grails, where I (or possibly other users) can log in online and add
-        new projects to be displayed in the portfolio page.
-    </p>
-</header>
+<!-- title section -->
+<section id="home" class="main-banner">
+    <div class="heading">
+        <h1>Portfolio Homepage</h1>
 
-<main>
-    <section class="container">
-        <h2>Features</h2>
-        <ul>
-            <li>Full implementation of a rather complicated css-template (including JavaScript-Animations),
-                adopted to be fully working inside grails</li>
-            <li>The application is fully responsive (except for the backend (Project-Controller)</li>
-            <li>Domain-Model with various fields including constraints</li>
-            <li>Showing all the projects, which are inside the database</li>
-            <li>6 example projects already provided via bootstrapping</li>
-            <li>Projects can show a previously uploaded image (image-upload-functionality not yet programmed)</li>
-            <li>Projects can be dynamically filtered (by four categories). Filtering happens via CSS-filter</li>
-        </ul>
-    </section>
+        <p>This project is about creating a personal website displaying my projects as a portfolio.
+            It was realized as a CMS-system in Grails, where I (or possibly other users) can log in online and add
+            new projects to be displayed in the portfolio page.</p>
 
-    <section class="container">
-        <h2>Used technologies</h2>
-        <ul>
-            <li><a class="link" href="https://grails.org/" target="_blank">Grails Framework</a></li>
-        </ul>
-    </section>
 
-    <section class="container">
-        <h2>Approach</h2>
-
-        <p>
-            First of all, I started by building the base mvc structure of the project by using in course material as template. I got a quite amount of errors in the beginning but managed to fix them.
-            After the setup was done, I started creating the logic for the mathematical calculations and continued by integrating this into the view. Then it took me a big load of time to create a proper
-            styling with css, so it looks decent. After this i started to implement result saving to the database including adding it to the view and creating styles for it. Last but not least,
-            a button to clear the history was implemented.
+        <p id="foto-spark">Created in 2019 in the course webeC at FHNW. By <a
+                href="mailto:andreas.ambuehl@students.fhnw.ch">Andreas Ambühl</a>.
         </p>
-    </section>
+    </div>
+</section>
 
-    <section class="container">
-        <h2>Some images</h2>
-        <img class="hero-image container" src="grails-app/assets/images/screenshot_of_app1.jpg" height="453" width="557" alt="1st screenshot of the app">
-        <img class="hero-image container" src="grails-app/assets/images/screenshot_of_app1_responsive.jpg" height="458" width="272" alt="1st screenshot of the app (responsive)">
+<!-- features section -->
+<div id="about" class="section wb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="message-box">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Full implementation of a rather complicated css-template (including JavaScript-Animations),
+                            adopted to be fully working inside grails
+                        </li>
+                        <li>The application is fully responsive (except for the backend (Project-Controller)</li>
+                        <li>Domain-Model with various fields including constraints</li>
+                        <li>Showing all the projects, which are inside the database</li>
+                        <li>Six example projects already provided via bootstrapping</li>
+                        <li>Projects can show a previously uploaded image (image-upload-functionality not yet
+                            programmed)
+                        </li>
+                        <li>Projects can be dynamically filtered (by four categories). Filtering happens via
+                            CSS-filter
+                        </li>
+                    </ul>
+                    <p class="picture-info">
+                        On the right side: picture of the top section of the page.
+                    </p>
+                </div><!-- end messagebox -->
+            </div><!-- end col -->
 
-        <h2>Responsive versions</h2>
-        <img class="hero-image container" src="grails-app/assets/images/screenshot_of_app2.jpg" height="456" width="553" alt="2nd screenshot of the app">
-        <img class="hero-image container" src="grails-app/assets/images/screenshot_of_app2_responsive.jpg" height="458" width="256" alt="2nd screenshot of the app (responsive)">
-    </section>
-</main>
+            <div class="col-md-6">
+                <div class="right-box-pro wow fadeIn">
+                    <img class="img-fluid img-rounded" src="grails-app/assets/images/screenshot_of_app1.jpg"
+                         alt="1st screenshot of the app">
+                </div><!-- end media -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
 
-<footer class="footer">
-    <p class="footer-text container">
-        <small>A Project of <a class="footer-link" href="mailto:benjamin.huber@students.fhnw.ch">Benjamin Huber</a></small>
-    </p>
-</footer>
 
-<!-- ALL JS FILES -->
-<script src="grails-app/assets/javascripts/all.js"></script>
-<!-- Camera Slider -->
-<script src="grails-app/assets/javascripts/jquery.easing.1.3.js"></script>
-<script src="grails-app/assets/javascripts/parallaxie.js"></script>
-<script src="grails-app/assets/javascripts/headline.js"></script>
-<!-- Contact form JavaScript -->
-<script src="grails-app/assets/javascripts/jqBootstrapValidation.js"></script>
-<script src="grails-app/assets/javascripts/contact_me.js"></script>
-<!-- ALL PLUGINS -->
-<script src="grails-app/assets/javascripts/custom.js"></script>
-<script src="grails-app/assets/javascripts/jquery.vide.js"></script>
+<!-- approach section -->
+<div id="approach" class="section wb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="message-box">
+                    <h2>Approach</h2>
+                    <p>
+                        At first, the whole Grails-Application was very difficult to understand for me. There was just
+                        too much 'magic' going on. But after a lot of trial and error, reviewing course notes and
+                        the course slides and also doing various tutorials, which I found online and regularly
+                        consulting Stack Overflow, I started to understand all the concepts of the grails and how
+                        it works in detail better an better, including the concepts of MVP, domain and the way how
+                        Groovy and GSPs work.
+                    </p>
+                    <p>
+                        It all took much more time than I initially thought, but it was worth the steep learning curve.
+                        There are still many ideas I had for the application, which I could not yet implement. But
+                        I'm already quite happy with what I could achieve.
+                    </p>
+                    <p class="picture-info">
+                        On the right side: picture portfolio section of the page (including the filter buttons).
+                    </p>
+                </div><!-- end messagebox -->
+            </div><!-- end col -->
+            <div class="col-md-6">
+                <div class="right-box-pro wow fadeIn">
+                    <img class="img-fluid img-rounded" src="grails-app/assets/images/screenshot_of_app2.jpg"
+                         alt="2nd screenshot of the app">
+                </div><!-- end media -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+<!-- technologies section -->
+<div id="technologies" class="section wb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="message-box">
+                    <h2>Technologies used</h2>
+                    <ul>
+                        <li><a class="link" href="https://grails.org/" target="_blank">Grails Framework</a></li>
+                        <li><a class="link" href="http://groovy-lang.org/" target="_blank">Groovy programming
+                            language</a></li>
+                        <li><a class="link" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a>
+                        </li>
+                        <li><a class="link" href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+                    </ul>
+                    <p class="picture-info">
+                        On the right side: a responsive version of the portfolio section.
+                    </p>
+                </div><!-- end messagebox -->
+            </div><!-- end col -->
+
+            <div class="img-box-small">
+                <div class="right-box-pro wow fadeIn">
+                    <img class="img-fluid img-rounded img-small" src="grails-app/assets/images/screenshot_of_app2_responsive.jpg"
+                         alt="2nd screenshot of the app (responsive version)">
+                </div><!-- end media -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+<!-- Copyrights-section -->
+<div class="copyrights">
+    <div class="container">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <p class="footer-links">
+                </p>
+
+                <p class="footer-company-name">All Rights Reserved. &copy; 2019 <a class="email-text"
+                                                                                   href="mailto:andreas.ambuehl@students.fhnw.ch">Andreas
+                    Ambühl</a></p>
+            </div>
+        </div>
+    </div><!-- end container -->
+</div><!-- end copyrights -->
+
+<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
 
 </body>
 </html>
