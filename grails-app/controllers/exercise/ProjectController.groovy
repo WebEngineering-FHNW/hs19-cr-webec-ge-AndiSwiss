@@ -6,7 +6,7 @@ import static org.springframework.http.HttpStatus.OK
 import static org.springframework.http.HttpStatus.CREATED
 import grails.gorm.transactions.Transactional
 
-@Secured("ROLE_USER")
+@Secured("ROLE_ADMIN")
 class ProjectController {
 
     static namespace = 'scaffolding'
