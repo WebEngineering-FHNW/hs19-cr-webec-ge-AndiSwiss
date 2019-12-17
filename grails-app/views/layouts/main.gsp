@@ -1,11 +1,34 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas  -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
     <title>
         <g:layoutTitle default="Grails"/>
     </title>
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="${resource(dir: "images", file: "favicon.ico")}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="${resource(dir: "images", file: "apple-touch-icon.png")}">
+
+    <!-- Bootstrap CSS -->
+    <asset:stylesheet src="bootstrap.min.css"/>
+    <!-- Site CSS -->
+    <asset:stylesheet src="style.css"/>
+
+    <!-- Responsive CSS -->
+    <asset:stylesheet src="responsive.css"/>
+    <!-- Custom CSS -->
+    <asset:stylesheet src="custom.css"/>
+
+    <!-- Modernizr -->
+    <asset:javascript src="modernizr.js"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 
@@ -17,22 +40,33 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>
+    <!-- Maybe later: enter here a logo again:-->
+%{--    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>--}%
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
-        <ul class="nav navbar-nav ml-auto">
-            <g:pageProperty name="page.nav"/>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <g:link controller="home" fragment="home" class="nav-link js-scroll-trigger">Home</g:link>
+            </li>
+            <li class="nav-item">
+                <g:link controller="home" fragment="about" class="nav-link js-scroll-trigger">About Me</g:link>
+            </li>
+            <li class="nav-item">
+                <g:link controller="home" fragment="services" class="nav-link js-scroll-trigger">Focus areas</g:link>
+            </li>
+            <li class="nav-item">
+                <g:link controller="home" fragment="portfolio" class="nav-link js-scroll-trigger">Portfolio</g:link>
+            </li>
+            <li class="nav-item nav-back-end">
+                <g:link controller="project" class="nav-link js-scroll-trigger">Back-End</g:link>
+            </li>
+
             <sec:ifLoggedIn>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Hello <sec:username/><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Profile</a></li>
-                        <li>(<g:link controller="logout">Logout</g:link>)</li>
-                    </ul>
+                <li class="nav-item">
+                    <g:link controller="logout" class="nav-link js-scroll-trigger">Logout</g:link>
                 </li>
             </sec:ifLoggedIn>
         </ul>
@@ -42,32 +76,22 @@
 
 <g:layoutBody/>
 
-<div class="footer row" role="contentinfo">
-    <div class="col">
-        <a href="http://guides.grails.org" target="_blank">
-            <asset:image src="advancedgrails.svg" alt="Grails Guides" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://guides.grails.org" target="_blank">Grails Guides</a></strong>
-        <p>Building your first Grails app? Looking to add security, or create a Single-Page-App? Check out the <a href="http://guides.grails.org" target="_blank">Grails Guides</a> for step-by-step tutorials.</p>
+<!-- Copyrights-section -->
+<div class="copyrights">
+    <div class="container">
+        <div class="footer-distributed">
+            <div class="footer-left">
+                <p class="footer-links">
+                </p>
 
-    </div>
-    <div class="col">
-        <a href="http://docs.grails.org" target="_blank">
-            <asset:image src="documentation.svg" alt="Grails Documentation" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://docs.grails.org" target="_blank">Documentation</a></strong>
-        <p>Ready to dig in? You can find in-depth documentation for all the features of Grails in the <a href="http://docs.grails.org" target="_blank">User Guide</a>.</p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2019 <a href="#">Andreas Ambühl</a></p>
+            </div>
+        </div>
+    </div><!-- end container -->
+</div><!-- end copyrights -->
 
-    </div>
+<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-    <div class="col">
-        <a href="https://grails-slack.cfapps.io" target="_blank">
-            <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
-        <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
-    </div>
-</div>
 
 
 <div id="spinner" class="spinner" style="display:none;">
