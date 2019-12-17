@@ -40,7 +40,7 @@ How to start the project: (if other than `grailsw run-app`)
 How to test the project:  (if other than `grailsw test-app`)
 
 Hand-written, static HTML 
-project description:      [index.html](index.html) in the root-folder
+project description:      [index.html](./index.html) in the root-folder
 
 External contributions:
 
