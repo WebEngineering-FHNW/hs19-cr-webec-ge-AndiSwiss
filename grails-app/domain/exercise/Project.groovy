@@ -32,6 +32,9 @@ class Project {
         return "$title ($description)"
     }
 
+    // This method calculates the category string, which is then used in the views/home/index.gsp
+    // for the category selector.
+    // It will be written as a string in a css class, so the css-filter (on my buttons) actually work.
     def getCategory() {
         StringBuilder sb = new StringBuilder()
         if (cat_group_work) sb.append(" cat_group_work")

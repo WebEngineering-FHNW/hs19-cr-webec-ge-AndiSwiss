@@ -11,8 +11,9 @@ class HomeControllerSpec extends Specification implements ControllerUnitTest<Hom
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+    /*
+     * The HomeController doesn't contain any logic. All the logic is in the Project-Domain-Model
+     * and the Project-Controller.
+     */
+
 }
