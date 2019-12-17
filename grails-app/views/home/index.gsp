@@ -266,7 +266,7 @@
 
         <!-- One portfolio item -->
             <g:each in="${Project.list()}" var="project">
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+                <div class="col-md-4 col-sm-6 gallery-grid ${project.getCategory()}">
                     <div class="post-box">
                         <div class="post-thumb">
                             <asset:image src="portfolioPics/${project.pictureName}" class="img-fluid post-pic"
@@ -292,7 +292,7 @@
                                 </g:else>
                             </p>
 
-                            <p><span class="description-text">${project.description}</span></p>
+                            <p><span class="description-text">${project.description} </span></p>
 
                             <p><span class="text-technologies">Technologies used:</span> ${project.technologies}</p>
                         </div>

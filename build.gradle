@@ -64,6 +64,7 @@ dependencies {
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:3.0.10"
 
     compile group: 'org.codehaus.groovy', name: 'groovy-dateutil', version: '2.5.8'
+    compile group: 'org.codehaus.groovy', name: 'groovy-dateutil', version: '2.5.8'
 
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.mockito:mockito-core"

@@ -8,6 +8,9 @@ class Project {
     Date date
     String pictureName
     String technologies
+    Boolean catA
+    Boolean catB
+    Boolean catC
 
     // todo: introduce a category enum -> which I can then use in the Portfolio front-end as a filter in
     //  data-filter=".gal_a"   (and .gal_b  and .gal_c)
@@ -30,5 +33,9 @@ class Project {
     @Override
     String toString() {
         return "$title ($description)"
+    }
+
+    def getCategory() {
+        return "gal_b"
     }
 }
