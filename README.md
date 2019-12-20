@@ -67,7 +67,10 @@ warnings comparing to weird behaviour :smile:, so I stay with Java 12.
 
 ## Project grading 
 
-Sometimes less is more: you included a lot of **CSS** dependencies, making their integration difficult. Anyway the result looks really good.
+Sometimes less is more: you included a lot of **CSS** dependencies, making their integration difficult.
+
+Still and anyway the result looks really good. Congratulation!
+
 Side remark: I do NOT see where `public.gsp` layout could be used.
 
 Kindly Refer to [GradedExercise.xlsx](GradedExercise.xlsx) for grading details.
